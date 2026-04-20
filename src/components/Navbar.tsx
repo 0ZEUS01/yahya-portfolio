@@ -27,10 +27,10 @@ export default function Navbar() {
             Projects
           </Link>
           <Link
-            href="/streaming"
+            href="/hobbies"
             className="hover:text-slate-950 dark:hover:text-white transition-colors"
           >
-            Big Man
+            Hobbies
           </Link>
           <Link
             href="/contact"
