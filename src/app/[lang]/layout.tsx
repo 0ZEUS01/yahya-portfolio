@@ -19,15 +19,15 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({
-  children, 
+  children,
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: 'en' | 'fr' }>; 
+  params: Promise<{ lang: string }>; // FIX: Changed to string
 }>) {
-  // Await the params to safely extract the language
   const resolvedParams = await params;
-  const lang = resolvedParams.lang;
+  // Safely tell TypeScript we know this is either 'en' or 'fr'
+  const lang = resolvedParams.lang as 'en' | 'fr';
 
   return (
     <html lang={lang}>

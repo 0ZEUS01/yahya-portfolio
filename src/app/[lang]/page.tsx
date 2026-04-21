@@ -3,11 +3,10 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import Image from 'next/image';
 
 // Accept the params from Next.js (Promise in Next 16+)
-export default async function Home(props: { params: Promise<{ lang: 'en' | 'fr' }> }) {
+export default async function Home(props: { params: Promise<{ lang: string }> }) {
   const params = await props.params;
-  const lang = params.lang;
-  
-  // Pass the language to our Markdown engine
+  const lang = params.lang as 'en' | 'fr';
+
   const { metadata, content } = getBioData(lang);
 
   return (
