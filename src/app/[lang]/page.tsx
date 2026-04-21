@@ -1,6 +1,6 @@
 import { getBioData } from "@/lib/markdown";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import Image from "next/image"; // Importing Next's optimized Image component
+import Image from "next/image";
 
 export default function Home() {
   const { metadata, content } = getBioData();
