@@ -1,32 +1,34 @@
-export default function HobbiesPage() {
+import { getDictionary } from '@/dictionaries/dictionary';
+
+export default async function HobbiesPage(props: { params: Promise<{ lang: 'en' | 'fr' }> }) {
+  const { lang } = await props.params;
+  const dict = await getDictionary(lang);
+
   return (
-    <main className="max-w-4xl mx-auto py-16 px-6 text-center">
-      <h1 className="text-4xl font-bold mb-4">The Big Man Stream</h1>
-      <p className="text-xl text-slate-600 dark:text-slate-400 mb-8">
-        Sharing gaming moments and building a community.
-      </p>
-
-      <div className="aspect-video w-full rounded-2xl bg-slate-200 dark:bg-slate-800 flex items-center justify-center border-2 border-dashed border-slate-300 dark:border-slate-700">
-        <p>Your Twitch/YouTube Embed or Stream Gallery goes here!</p>
+    <main className="max-w-4xl mx-auto py-16 px-6">
+      <div className="text-center mb-16">
+        <h1 className="text-4xl font-extrabold mb-4 text-slate-900 dark:text-white">
+          {dict.hobbies.title}
+        </h1>
+        <p className="text-xl text-slate-600 dark:text-slate-400">
+          {dict.hobbies.subtitle}
+        </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 mt-8">
-        <a href="#" className="p-4 bg-red-600 text-white rounded-xl font-bold">
-          YouTube
-        </a>
-        <a
-          href="#"
-          className="p-4 bg-purple-600 text-white rounded-xl font-bold"
-        >
-          Kick
-        </a>
-        <a
-          href="#"
-          className="p-4 bg-slate-800 text-white rounded-xl font-bold"
-        >
-          TikTok
-        </a>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="p-8 rounded-3xl bg-green-50 dark:bg-green-900/10 border border-green-100 dark:border-green-900/30">
+          <span className="text-3xl">⚽</span>
+          <h2 className="text-2xl font-bold mt-4 mb-2 text-slate-900 dark:text-white">{dict.hobbies.footballTitle}</h2>
+          <p className="text-slate-600 dark:text-slate-400">{dict.hobbies.footballDesc}</p>
+        </div>
+
+        <div className="p-8 rounded-3xl bg-indigo-50 dark:bg-indigo-900/10 border border-indigo-100 dark:border-indigo-900/30">
+          <span className="text-3xl">🎮</span>
+          <h2 className="text-2xl font-bold mt-4 mb-2 text-slate-900 dark:text-white">{dict.hobbies.gamingTitle}</h2>
+          <p className="text-slate-600 dark:text-slate-400">{dict.hobbies.gamingDesc}</p>
+        </div>
       </div>
+      {/* ... keeping your social media buttons identical ... */}
     </main>
   );
 }

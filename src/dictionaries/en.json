@@ -4,5 +4,21 @@
     "projects": "Projects",
     "hobbies": "Hobbies",
     "contact": "Contact"
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "description": "I'm always open to discussing new projects, Salesforce opportunities, or just chatting about technology.",
+    "email": "yahya.zini@email.com",
+    "linkedin": "LinkedIn Profile",
+    "football": "Available for a football match in Rabat!"
+  },
+  "hobbies": {
+    "title": "Life Beyond the Code",
+    "subtitle": "I'm Yahya Zini—a developer by day, and an adventurer by choice.",
+    "footballTitle": "The Pitch",
+    "footballDesc": "There's nothing like the energy of a football match. It's where I stay active, practice teamwork, and clear my head. If you're in Rabat and need a player, I'm ready.",
+    "gamingTitle": "Digital Moments",
+    "gamingDesc": "Known as 'Big Man' in the gaming world. I enjoy sharing moments with friends, exploring virtual worlds, and building a community through streaming.",
+    "socials": "Catch me on these platforms"
   }
 }

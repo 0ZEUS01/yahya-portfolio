@@ -4,5 +4,21 @@
     "projects": "Projets",
     "hobbies": "Loisirs",
     "contact": "Contact"
+  },
+  "contact": {
+    "title": "Discutons-en",
+    "description": "Je suis toujours ouvert pour discuter de nouveaux projets, d'opportunités Salesforce, ou simplement parler de technologie.",
+    "email": "yahya.zini@email.com",
+    "linkedin": "Profil LinkedIn",
+    "football": "Disponible pour un match de foot à Rabat !"
+  },
+  "hobbies": {
+    "title": "La Vie au-delà du Code",
+    "subtitle": "Je suis Yahya Zini — développeur le jour, et aventurier par choix.",
+    "footballTitle": "Le Terrain",
+    "footballDesc": "Rien ne vaut l'énergie d'un match de football. C'est là que je reste actif, que je pratique l'esprit d'équipe et que je me vide la tête. Si vous êtes à Rabat et qu'il vous manque un joueur, je suis prêt.",
+    "gamingTitle": "Moments Numériques",
+    "gamingDesc": "Connu sous le nom de 'Big Man' dans le monde du gaming. J'aime partager des moments avec des amis, explorer des mondes virtuels et construire une communauté via le streaming.",
+    "socials": "Retrouvez-moi sur ces plateformes"
   }
 }
