@@ -37,7 +37,7 @@ This project is designed to be highly reusable. If you want to use this for your
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/yahya-portfolio.git
+git clone https://github.com/0ZEUS01/yahya-portfolio.git
 cd yahya-portfolio
 npm install
 ```
