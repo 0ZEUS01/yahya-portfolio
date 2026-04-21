@@ -13,15 +13,16 @@ export default async function ProjectsPage(props: { params: Promise<{ lang: stri
       
       <div className="grid grid-cols-1 gap-6">
         {projects.map((project) => (
-          <div key={project.slug} className="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:shadow-lg transition-shadow bg-white dark:bg-slate-900">
+          <div key={project.slug} className="p-6 rounded-2xl border border-slate-200/50 dark:border-[#233554] hover:shadow-lg transition-shadow bg-white dark:bg-[#112240]">
             <span className="text-xs font-bold text-blue-600 uppercase">{project.metadata.type}</span>
             <h2 className="text-2xl font-bold mt-2 text-slate-900 dark:text-white">{project.metadata.title}</h2>
-            <p className="text-slate-600 dark:text-slate-400 mt-2 mb-4 whitespace-pre-wrap">
+            <p className="text-slate-600 dark:text-[#8892B0] mt-2 mb-4 whitespace-pre-wrap">
               {project.content}
             </p>
-            <div className="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded text-sm font-medium text-slate-700 dark:text-slate-300">
+            <div className="inline-block px-3 py-1 bg-slate-100 dark:bg-[#0A192F] rounded text-sm font-medium text-slate-700 dark:text-[#CCD6F6]">
               ⚙️ {project.metadata.tech}
             </div>
+            
           </div>
         ))}
       </div>

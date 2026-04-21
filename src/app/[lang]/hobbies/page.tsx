@@ -41,7 +41,7 @@ export default async function HobbiesPage(props: { params: Promise<{ lang: strin
         </div>
       </div>
 
-      <div className="bg-slate-900 dark:bg-slate-800 rounded-3xl p-10 text-white shadow-2xl">
+      <div className="bg-[#112240] dark:bg-[#112240] rounded-3xl p-10 text-white shadow-2xl">
         <h3 className="text-2xl font-bold mb-6 text-center">
           {dict.hobbies.socials}
         </h3>
