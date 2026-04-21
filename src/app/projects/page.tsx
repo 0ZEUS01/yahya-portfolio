@@ -24,4 +24,8 @@ export default function ProjectsPage() {
       </div>
     </main>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 02db8ecfa542b2c1bfadd112b0f4510ce565c173
