@@ -7,7 +7,7 @@
 
 A high-performance, fully responsive, and bilingual (English/French) personal portfolio built with Next.js App Router. This project is engineered with a strict separation of concerns, allowing developers to fully customize the portfolio without touching the core React components.
 
-**🔴 Live Demo:** [https://[YOUR_VERCEL_LINK_HERE].vercel.app](https://[YOUR_VERCEL_LINK_HERE].vercel.app)
+**🔴 Live Demo:** [https://yahya-portfolio-mu.vercel.app/](https://yahya-portfolio-mu.vercel.app/)
 
 ---
 
@@ -85,4 +85,4 @@ This project is optimized for deployment on [Vercel](https://vercel.com/).
 Every subsequent push to the `main` branch will automatically trigger a new build, instantly updating your live portfolio.
 
 ---
-*Architected and built by [Yahya Zini](https://github.com/your-username), Freelance State Software Engineer.*
+*Architected and built by [Yahya Zini](https://github.com/0ZEUS01), Freelance State Software Engineer.*
