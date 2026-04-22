@@ -85,8 +85,4 @@ This project is optimized for deployment on [Vercel](https://vercel.com/).
 Every subsequent push to the `main` branch will automatically trigger a new build, instantly updating your live portfolio.
 
 ---
-<<<<<<< HEAD
 *Architected and built by [Yahya Zini](https://github.com/0ZEUS01), Freelance State Software Engineer.*
-=======
-*Architected and built by [Yahya Zini](https://github.com/0ZEUS01), Freelance State Software Engineer.*
->>>>>>> 59bd698893eec6105bed3f068f4668985a9bd3ab

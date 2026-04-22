@@ -1,9 +1,23 @@
 {
   "navbar": {
     "home": "Accueil",
+    "about": "À propos",
     "projects": "Projets",
     "hobbies": "Loisirs",
     "contact": "Contact"
+  },
+  "landing": {
+    "badge": "Ingénieur d'État en Logiciel",
+    "heroTitle": "Création de systèmes robustes & de communautés numériques.",
+    "heroSub": "Je suis Yahya Zini. Le jour, je conçois des solutions Salesforce et Full-Stack. La nuit, je suis 'Big Man', créateur de contenu gaming et explorateur du monde numérique.",
+    "btnProjects": "Voir mes projets",
+    "btnAbout": "Lire mon histoire",
+    "card1Title": "Salesforce & Java",
+    "card1Sub": "Développement d'entreprise.",
+    "card2Title": "Créateur de Contenu",
+    "card2Sub": "Streaming sur YouTube & Kick.",
+    "card3Title": "Basé au Maroc",
+    "card3Sub": "Rabat & Errachidia."
   },
   "contact": {
     "title": "Discutons-en",

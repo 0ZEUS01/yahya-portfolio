@@ -1,9 +1,23 @@
 {
   "navbar": {
     "home": "Home",
+    "about": "About",
     "projects": "Projects",
     "hobbies": "Hobbies",
     "contact": "Contact"
+  },
+  "landing": {
+    "badge": "State Software Engineer",
+    "heroTitle": "Building robust systems & digital communities.",
+    "heroSub": "I'm Yahya Zini. By day, I architect Salesforce and Full-Stack solutions. By night, I'm 'Big Man', creating gaming content and exploring the digital world.",
+    "btnProjects": "View My Work",
+    "btnAbout": "Read My Story",
+    "card1Title": "Salesforce & Java",
+    "card1Sub": "Enterprise-grade development.",
+    "card2Title": "Content Creator",
+    "card2Sub": "Streaming on YouTube & Kick.",
+    "card3Title": "Based in Morocco",
+    "card3Sub": "Rabat & Errachidia."
   },
   "contact": {
     "title": "Let's Connect",

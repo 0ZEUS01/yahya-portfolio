@@ -17,6 +17,7 @@ export default async function Navbar({ lang }: { lang: 'en' | 'fr' }) {
           {/* Links (Now using the dictionary and the dynamic lang URL) */}
           <div className="hidden md:flex gap-6 text-sm font-medium text-slate-600 dark:text-slate-400">
             <Link href={`/${lang}`} className="hover:text-slate-950 dark:hover:text-white transition-colors">{dict.navbar.home}</Link>
+            <Link href={`/${lang}/about`} className="hover:text-slate-950 dark:hover:text-white transition-colors">{dict.navbar.about}</Link>
             <Link href={`/${lang}/projects`} className="hover:text-slate-950 dark:hover:text-white transition-colors">{dict.navbar.projects}</Link>
             <Link href={`/${lang}/hobbies`} className="hover:text-slate-950 dark:hover:text-white transition-colors">{dict.navbar.hobbies}</Link>
             <Link href={`/${lang}/contact`} className="hover:text-slate-950 dark:hover:text-white transition-colors">{dict.navbar.contact}</Link>
