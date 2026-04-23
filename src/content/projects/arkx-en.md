@@ -1,7 +1,7 @@
 ---
-title: "ARKx Assurance"
-description: "Insurance Claim Management System built on Salesforce."
-tech: ["Apex", "LWC", "Salesforce Flow"]
-image: "/arkx.jpg"
+title: "ARKx Insurance"
+tech: "Apex, LWC, Flow, SOQL"
+type: "Salesforce Ecosystem"
+logo: "/arkx-logo.jpg"
 ---
-Developed an automated system to manage the lifecycle of insurance claims, from prospect to client handling.
+A learning-focused internship where I applied practical Salesforce administration and development to an insurance project. I managed the complete lifecycle from lead to customer, and from claim creation to approval/rejection across Sales, Service, Experience, and Data Clouds.

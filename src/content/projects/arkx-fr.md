@@ -1,6 +1,7 @@
 ---
 title: "ARKx Assurance"
-tech: "Salesforce Apex, LWC, Flow"
+tech: "Apex, LWC, Flow, SOQL"
 type: "Écosystème Salesforce"
+logo: "/arkx-logo.jpg"
 ---
-Conception d'un système automatisé de gestion des réclamations d'assurance lors de mon stage. Gestion du cycle de vie complet, du prospect à la résolution client, en utilisant des déclencheurs Apex personnalisés et des Lightning Web Components.
+Un stage axé sur l'apprentissage où j'ai mis en pratique l'administration et le développement Salesforce à travers un projet d'assurance. J'ai géré le cycle de vie complet, du prospect au client, et de la création de la réclamation à son approbation/rejet à travers les Clouds Sales, Service, Experience et Data.
