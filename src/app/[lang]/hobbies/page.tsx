@@ -1,70 +1,100 @@
 import { getDictionary } from '@/dictionaries/dictionary';
+import MediaCarousel from '@/components/MediaCarousel'; // 🚨 Updated import
 
 export default async function HobbiesPage(props: { params: Promise<{ lang: string }> }) {
   const params = await props.params;
-  
   const lang = params.lang as 'en' | 'fr';
-  
   const dict = await getDictionary(lang);
 
   return (
-    <main className="max-w-4xl mx-auto py-16 px-6">
+    <main className="max-w-5xl mx-auto py-16 px-6 min-h-screen">
       
-      <div className="text-center mb-16">
-        <h1 className="text-4xl font-extrabold mb-4 text-slate-900 dark:text-white">
-          {dict.hobbies.title}
-        </h1>
-        <p className="text-xl text-slate-600 dark:text-slate-400">
-          {dict.hobbies.subtitle}
-        </p>
+      {/* HEADER SECTION (Remains the same) ... */}
+      <div className="text-center md:text-left mb-16 border-b border-slate-200/50 dark:border-[#233554] pb-8">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-slate-900 dark:text-white tracking-tight">{dict.hobbies.title}</h1>
+        <p className="text-xl text-slate-600 dark:text-[#8892B0] max-w-2xl">{dict.hobbies.subtitle}</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        <div className="p-8 rounded-3xl bg-green-50 dark:bg-green-900/10 border border-green-100 dark:border-green-900/30">
-          <span className="text-3xl">⚽</span>
-          <h2 className="text-2xl font-bold mt-4 mb-2 text-slate-900 dark:text-white">
-            {dict.hobbies.footballTitle}
-          </h2>
-          <p className="text-slate-600 dark:text-slate-400">
-            {dict.hobbies.footballDesc}
-          </p>
-        </div>
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold mb-8 text-slate-900 dark:text-white flex items-center gap-3">
+          <span className="text-blue-600 dark:text-blue-400">🌍</span> {dict.hobbies.commTitle}
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          {/* North Africa Dreamin (Mixed Media Example) */}
+          <div className="flex flex-col rounded-3xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] shadow-sm hover:shadow-md transition-all group overflow-hidden">
+            <MediaCarousel 
+              media={['/nad-1.jpg', '/nad-2.jpg' ]} // 🚨 You can now mix images and videos!
+              alt="Hackathon Winner" 
+            />
+            <div className="p-8 flex-1">
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2 block">Hackathon</span>
+              <h3 className="text-2xl font-bold mb-3 text-slate-900 dark:text-white">{dict.hobbies.nadTitle}</h3>
+              <p className="text-slate-600 dark:text-[#8892B0] leading-relaxed">{dict.hobbies.nadDesc}</p>
+            </div>
+          </div>
 
-        <div className="p-8 rounded-3xl bg-indigo-50 dark:bg-indigo-900/10 border border-indigo-100 dark:border-indigo-900/30">
-          <span className="text-3xl">🎮</span>
-          <h2 className="text-2xl font-bold mt-4 mb-2 text-slate-900 dark:text-white">
-            {dict.hobbies.gamingTitle}
-          </h2>
-          <p className="text-slate-600 dark:text-slate-400">
-            {dict.hobbies.gamingDesc}
-          </p>
-        </div>
-      </div>
+          {/* GITEX */}
+          <div className="flex flex-col rounded-3xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] shadow-sm hover:shadow-md transition-all group overflow-hidden">
+            <MediaCarousel media={['/gitex-1.jpg', '/gitex-2.jpg', '/gitex-3.mp4']} alt="GITEX Africa" />
+            <div className="p-8 flex-1">
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2 block">Conference</span>
+              <h3 className="text-2xl font-bold mb-3 text-slate-900 dark:text-white">{dict.hobbies.gitexTitle}</h3>
+              <p className="text-slate-600 dark:text-[#8892B0] leading-relaxed">{dict.hobbies.gitexDesc}</p>
+            </div>
+          </div>
 
-      <div className="bg-[#112240] dark:bg-[#112240] rounded-3xl p-10 text-white shadow-2xl">
-        <h3 className="text-2xl font-bold mb-6 text-center">
-          {dict.hobbies.socials}
-        </h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <a href="#" className="flex flex-col items-center p-4 rounded-xl hover:bg-white/10 transition-colors">
-            <span className="text-2xl mb-2">📺</span>
-            <span className="font-semibold text-sm">YouTube</span>
-          </a>
-          <a href="#" className="flex flex-col items-center p-4 rounded-xl hover:bg-white/10 transition-colors">
-            <span className="text-2xl mb-2">💜</span>
-            <span className="font-semibold text-sm">Kick</span>
-          </a>
-          <a href="#" className="flex flex-col items-center p-4 rounded-xl hover:bg-white/10 transition-colors">
-            <span className="text-2xl mb-2">📸</span>
-            <span className="font-semibold text-sm">Instagram</span>
-          </a>
-          <a href="#" className="flex flex-col items-center p-4 rounded-xl hover:bg-white/10 transition-colors">
-            <span className="text-2xl mb-2">🎵</span>
-            <span className="font-semibold text-sm">TikTok</span>
-          </a>
+          {/* Salesforce Community */}
+          <div className="flex flex-col rounded-3xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] shadow-sm hover:shadow-md transition-all group overflow-hidden">
+            <MediaCarousel media={['/sf-community-1.jpg', '/sf-community-2.jpg']} alt="Salesforce Community" />
+            <div className="p-8 flex-1">
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2 block">Networking</span>
+              <h3 className="text-2xl font-bold mb-3 text-slate-900 dark:text-white">{dict.hobbies.sfTitle}</h3>
+              <p className="text-slate-600 dark:text-[#8892B0] leading-relaxed">{dict.hobbies.sfDesc}</p>
+            </div>
+          </div>
+
+          {/* ENACTUS */}
+          <div className="flex flex-col rounded-3xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] shadow-sm hover:shadow-md transition-all group overflow-hidden">
+            <MediaCarousel media={['/enactus-2.jpg']} alt="ENACTUS Team" />
+            <div className="p-8 flex-1">
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2 block">Leadership</span>
+              <h3 className="text-2xl font-bold mb-3 text-slate-900 dark:text-white">{dict.hobbies.enactusTitle}</h3>
+              <p className="text-slate-600 dark:text-[#8892B0] leading-relaxed">{dict.hobbies.enactusDesc}</p>
+            </div>
+          </div>
+
         </div>
-      </div>
-      
+      </section>
+
+      {/* SECTION 2: PERSONAL INTERESTS (SPORTS & GAMING) */}
+      <section>
+        <h2 className="text-2xl font-bold mb-8 text-slate-900 dark:text-white flex items-center gap-3">
+          <span className="text-blue-600 dark:text-blue-400">⚡</span> {dict.hobbies.personalTitle}
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="p-6 rounded-2xl bg-indigo-50 dark:bg-indigo-900/10 border border-indigo-100 dark:border-[#233554]">
+            <span className="text-3xl block mb-3">🎮</span>
+            <h3 className="text-lg font-bold mb-2 text-slate-900 dark:text-white">{dict.hobbies.gamingTitle}</h3>
+            <p className="text-sm text-slate-600 dark:text-[#8892B0]">{dict.hobbies.gamingDesc}</p>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-green-50 dark:bg-green-900/10 border border-green-100 dark:border-[#233554]">
+            <span className="text-3xl block mb-3">🏀</span>
+            <h3 className="text-lg font-bold mb-2 text-slate-900 dark:text-white">{dict.hobbies.sportsTitle}</h3>
+            <p className="text-sm text-slate-600 dark:text-[#8892B0]">{dict.hobbies.sportsDesc}</p>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-amber-50 dark:bg-amber-900/10 border border-amber-100 dark:border-[#233554]">
+            <span className="text-3xl block mb-3">🔧</span>
+            <h3 className="text-lg font-bold mb-2 text-slate-900 dark:text-white">{dict.hobbies.practicalTitle}</h3>
+            <p className="text-sm text-slate-600 dark:text-[#8892B0]">{dict.hobbies.practicalDesc}</p>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }

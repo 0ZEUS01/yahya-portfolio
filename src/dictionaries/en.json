@@ -21,18 +21,36 @@
   },
   "contact": {
     "title": "Let's Connect",
-    "description": "I'm always open to discussing new projects, Salesforce opportunities, or just chatting about technology.",
-    "email": "yahya.zini@email.com",
+    "description": "Whether you want to discuss Salesforce , collaborate on a project, or just chat about technology, my inbox is open.",
+    "profTitle": "Professional Network",
+    "phone": "+212 6 36 70 76 08",
+    "email": "Zini.yahya22@gmail.com",
     "linkedin": "LinkedIn Profile",
-    "football": "Available for a football match in Rabat!"
+    "github": "GitHub Profile",
+    "socialTitle": "Social Media",
+    "youtube": "YouTube Channel",
+    "tiktok": "TikTok",
+    "instagramBigMan": "Big Man Instagram",
+    "instagramPersonal": "Personal Instagram"
   },
   "hobbies": {
-    "title": "Life Beyond the Code",
-    "subtitle": "I'm Yahya Zini—a developer by day, and an adventurer by choice.",
-    "footballTitle": "The Pitch",
-    "footballDesc": "There's nothing like the energy of a football match. It's where I stay active, practice teamwork, and clear my head. If you're in Rabat and need a player, I'm ready.",
-    "gamingTitle": "Digital Moments",
-    "gamingDesc": "Known as 'Big Man' in the gaming world. I enjoy sharing moments with friends, exploring virtual worlds, and building a community through streaming.",
-    "socials": "Catch me on these platforms"
+    "title": "Beyond the Screen",
+    "subtitle": "Tech communities, hackathons, and life outside the IDE.",
+    "commTitle": "Community & Achievements",
+    "nadTitle": "3rd Place Hackathon Winner",
+    "nadDesc": "Secured 3rd place at the North Africa Dreamin Salesforce Community Meetup by building an innovative solution using Salesforce Agentforce.",
+    "gitexTitle": "GITEX Africa Attendee",
+    "gitexDesc": "Engaged with global industry leaders and explored the latest trends in technology, cloud computing, and AI innovations in Marrakech.",
+    "sfTitle": "Salesforce Developer Community",
+    "sfDesc": "Active member participating in networking events, community discussions, and knowledge-sharing within the local ecosystem.",
+    "enactusTitle": "ENACTUS EMSI",
+    "enactusDesc": "Contributed to social entrepreneurship projects, collaborating with cross-functional teams to drive positive community impact.",
+    "personalTitle": "Personal Interests",
+    "gamingTitle": "Gaming & Content",
+    "gamingDesc": "Enjoy live streaming and sharing gameplay experiences with friends and an active online community under the 'Big Man' persona.",
+    "sportsTitle": "Sports Enthusiast",
+    "sportsDesc": "Passionate about staying active by playing and following football, basketball, and handball.",
+    "practicalTitle": "Practical & Mind",
+    "practicalDesc": "When away from the keyboard, I spend time exploring electronics repair and diving into good books."
   }
 }

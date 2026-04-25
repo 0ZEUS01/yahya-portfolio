@@ -20,19 +20,37 @@
     "card3Sub": "Rabat & Errachidia."
   },
   "contact": {
-    "title": "Discutons-en",
-    "description": "Je suis toujours ouvert pour discuter de nouveaux projets, d'opportunités Salesforce, ou simplement parler de technologie.",
-    "email": "yahya.zini@email.com",
+    "title": "Restons en Contact",
+    "description": "Que vous souhaitiez discuter de Salesforce, collaborer sur un projet ou simplement parler de technologie, ma boîte de réception est ouverte.",
+    "profTitle": "Réseau Professionnel",
+    "phone": "+212 6 36 70 76 08",
+    "email": "Zini.yahya22@gmail.com",
     "linkedin": "Profil LinkedIn",
-    "football": "Disponible pour un match de foot à Rabat !"
+    "github": "Profil GitHub",
+    "socialTitle": "Réseaux Sociaux",
+    "youtube": "Chaîne YouTube",
+    "tiktok": "TikTok",
+    "instagramBigMan": "Instagram Big Man",
+    "instagramPersonal": "Instagram Personnel"
   },
   "hobbies": {
-    "title": "La Vie au-delà du Code",
-    "subtitle": "Je suis Yahya Zini — développeur le jour, et aventurier par choix.",
-    "footballTitle": "Le Terrain",
-    "footballDesc": "Rien ne vaut l'énergie d'un match de football. C'est là que je reste actif, que je pratique l'esprit d'équipe et que je me vide la tête. Si vous êtes à Rabat et qu'il vous manque un joueur, je suis prêt.",
-    "gamingTitle": "Moments Numériques",
-    "gamingDesc": "Connu sous le nom de 'Big Man' dans le monde du gaming. J'aime partager des moments avec des amis, explorer des mondes virtuels et construire une communauté via le streaming.",
-    "socials": "Retrouvez-moi sur ces plateformes"
+    "title": "Au-delà de l'Écran",
+    "subtitle": "Communautés tech, hackathons, et la vie en dehors de l'IDE.",
+    "commTitle": "Communauté & Réalisations",
+    "nadTitle": "3ème Place au Hackathon",
+    "nadDesc": "J'ai obtenu la 3ème place lors du Meetup North Africa Dreamin en créant une solution innovante avec Salesforce Agentforce.",
+    "gitexTitle": "Participant au GITEX Africa",
+    "gitexDesc": "Échanges avec les leaders mondiaux de l'industrie et exploration des dernières tendances en IA et Cloud Computing à Marrakech.",
+    "sfTitle": "Communauté Développeurs Salesforce",
+    "sfDesc": "Membre actif participant aux événements de réseautage et au partage de connaissances au sein de l'écosystème local.",
+    "enactusTitle": "ENACTUS EMSI",
+    "enactusDesc": "Contribution à des projets d'entrepreneuriat social, en collaborant pour avoir un impact positif sur la communauté.",
+    "personalTitle": "Centres d'Intérêt",
+    "gamingTitle": "Gaming & Création",
+    "gamingDesc": "J'aime streamer en direct et partager mes expériences de jeu avec une communauté active sous le pseudo 'Big Man'.",
+    "sportsTitle": "Passionné de Sport",
+    "sportsDesc": "Passionné par le sport, je pratique et suis régulièrement le football, le basketball et le handball.",
+    "practicalTitle": "Pratique & Esprit",
+    "practicalDesc": "Loin du clavier, je passe du temps à explorer la réparation électronique et à me plonger dans de bons livres."
   }
 }
