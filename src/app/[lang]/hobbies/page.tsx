@@ -55,6 +55,7 @@ export default async function HobbiesPage(props: {
                 "https://res.cloudinary.com/dpwzye1tt/video/upload/gitex-3_ym9sll.mp4",
               ]}
               alt="GITEX Africa"
+              imagePosition="object-top"
             />
             <div className="p-8 flex-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2 block">
@@ -108,6 +109,7 @@ export default async function HobbiesPage(props: {
             <MediaCarousel
               media={["/ampc-1.jpg", "/ampc-2.jpg", "/ampc-3.jpg"]}
               alt="AMPC Competition Meknes"
+              imagePosition="object-top"
             />
             <div className="p-8 flex-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2 block">

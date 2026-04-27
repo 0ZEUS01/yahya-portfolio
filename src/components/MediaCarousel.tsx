@@ -12,60 +12,44 @@ import {
 interface MediaCarouselProps {
   media: string[];
   alt: string;
+  imagePosition?: string;
 }
 
-export default function MediaCarousel({ media, alt }: MediaCarouselProps) {
+export default function MediaCarousel({ media, alt, imagePosition = "object-center" }: MediaCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
-  // Helper to check if a file is a video based on its extension
   const isVideo = (src: string) => /\.(mp4|webm|ogg)$/i.test(src);
-
-  const nextMedia = (e?: React.MouseEvent) => {
-    if (e) e.stopPropagation();
-    setCurrentIndex((prev) => (prev + 1) % media.length);
-  };
-
-  const prevMedia = (e?: React.MouseEvent) => {
-    if (e) e.stopPropagation();
-    setCurrentIndex((prev) => (prev - 1 + media.length) % media.length);
-  };
-
+  const nextMedia = (e?: React.MouseEvent) => { if (e) e.stopPropagation(); setCurrentIndex((prev) => (prev + 1) % media.length); };
+  const prevMedia = (e?: React.MouseEvent) => { if (e) e.stopPropagation(); setCurrentIndex((prev) => (prev - 1 + media.length) % media.length); };
   const openFullscreen = () => setIsFullscreen(true);
   const closeFullscreen = () => setIsFullscreen(false);
 
-  // Function to render either an Image or a Video
   const renderContent = (src: string, isFull: boolean) => {
     if (isVideo(src)) {
       return (
         <video
           key={src}
-          className={`w-full h-full ${isFull ? "object-contain" : "object-cover pointer-events-none"}`}
+          src={src}
+          className={`w-full h-full ${isFull ? 'object-contain' : `object-cover pointer-events-none ${imagePosition}`}`}
           controls={isFull}
-          autoPlay={true}
+          autoPlay
           muted={!isFull}
-          loop={true}
+          loop
           playsInline
-        >
-          <source src={src} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        />
       );
     }
-
+    
     return (
-      <Image
+      <Image 
         key={src}
-        src={src}
-        alt={alt}
-        fill
-        sizes={
-          isFull
-            ? "100vw"
-            : "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        }
-        priority={currentIndex === 0 && !isFull}
-        className={`transition-all duration-500 ${isFull ? "object-contain" : "object-cover group-hover/carousel:scale-105"}`}
+        src={src} 
+        alt={alt} 
+        fill 
+        sizes={isFull ? "100vw" : "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"}
+        priority={currentIndex === 0 && !isFull} 
+        className={`transition-all duration-500 ${isFull ? 'object-contain' : `object-cover group-hover/carousel:scale-105 ${imagePosition}`}`} 
       />
     );
   };
