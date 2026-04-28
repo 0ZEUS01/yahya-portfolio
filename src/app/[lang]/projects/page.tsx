@@ -19,10 +19,11 @@ export default async function ProjectsPage(props: {
       <div className="grid grid-cols-1 gap-10">
         {projects.map((project) => {
           const techArray = project.metadata.tech
-            ? project.metadata.tech.split(",").map((t) => t.trim())
+            ? project.metadata.tech.split(",").map((t: string) => t.trim())
             : [];
+
           const mediaArray = project.metadata.media
-            ? project.metadata.media.split(",").map((m) => m.trim())
+            ? project.metadata.media.split(",").map((m: string) => m.trim())
             : [];
 
           return (
@@ -68,7 +69,7 @@ export default async function ProjectsPage(props: {
                 <div>
                   {/* Styled Tech Pills */}
                   <div className="flex flex-wrap gap-2 mb-6">
-                    {techArray.map((tech, index) => (
+                    {techArray.map((tech: string, index: number) => (
                       <span
                         key={index}
                         className="px-3 py-1 bg-slate-100 dark:bg-[#020C1B] border border-slate-200 dark:border-[#233554] rounded-full text-xs font-semibold text-slate-700 dark:text-[#CCD6F6]"
