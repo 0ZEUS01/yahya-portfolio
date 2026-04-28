@@ -13,51 +13,98 @@ interface MediaCarouselProps {
   media: string[];
   alt: string;
   imagePosition?: string;
+  containerClassName?: string;
+  objectFit?: string;
+  enableBlurBg?: boolean; // 🚨 ADDED: Switch for the cinematic blur effect
 }
 
-export default function MediaCarousel({ media, alt, imagePosition = "object-center" }: MediaCarouselProps) {
+export default function MediaCarousel({
+  media,
+  alt,
+  imagePosition = "object-center",
+  containerClassName = "relative h-56 w-full",
+  objectFit = "object-cover",
+  enableBlurBg = false, // Default is false so it doesn't break anything else
+}: MediaCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   const isVideo = (src: string) => /\.(mp4|webm|ogg)$/i.test(src);
-  const nextMedia = (e?: React.MouseEvent) => { if (e) e.stopPropagation(); setCurrentIndex((prev) => (prev + 1) % media.length); };
-  const prevMedia = (e?: React.MouseEvent) => { if (e) e.stopPropagation(); setCurrentIndex((prev) => (prev - 1 + media.length) % media.length); };
+  const nextMedia = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    setCurrentIndex((prev) => (prev + 1) % media.length);
+  };
+  const prevMedia = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    setCurrentIndex((prev) => (prev - 1 + media.length) % media.length);
+  };
   const openFullscreen = () => setIsFullscreen(true);
   const closeFullscreen = () => setIsFullscreen(false);
 
   const renderContent = (src: string, isFull: boolean) => {
     if (isVideo(src)) {
       return (
-        <video
-          key={src}
-          src={src}
-          className={`w-full h-full ${isFull ? 'object-contain' : `object-cover pointer-events-none ${imagePosition}`}`}
-          controls={isFull}
-          autoPlay
-          muted={!isFull}
-          loop
-          playsInline
-        />
+        <>
+          {/* 🚨 BLURRED BACKGROUND (Video) */}
+          {enableBlurBg && !isFull && (
+            <video
+              src={src}
+              className="absolute inset-0 w-full h-full object-cover blur-xl opacity-40 scale-125 pointer-events-none"
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+          )}
+
+          <video
+            key={src}
+            src={src}
+            className={`absolute inset-0 z-10 w-full h-full ${isFull ? "object-contain" : `pointer-events-none ${objectFit} ${imagePosition}`}`}
+            controls={isFull}
+            autoPlay
+            muted={!isFull}
+            loop
+            playsInline
+          />
+        </>
       );
     }
-    
+
     return (
-      <Image 
-        key={src}
-        src={src} 
-        alt={alt} 
-        fill 
-        sizes={isFull ? "100vw" : "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"}
-        priority={currentIndex === 0 && !isFull} 
-        className={`transition-all duration-500 ${isFull ? 'object-contain' : `object-cover group-hover/carousel:scale-105 ${imagePosition}`}`} 
-      />
+      <>
+        {/* 🚨 BLURRED BACKGROUND (Image) */}
+        {enableBlurBg && !isFull && (
+          <Image
+            src={src}
+            alt={`${alt} background`}
+            fill
+            className="absolute inset-0 object-cover blur-xl opacity-40 scale-125 pointer-events-none z-0"
+          />
+        )}
+
+        <Image
+          key={src}
+          src={src}
+          alt={alt}
+          fill
+          sizes={
+            isFull
+              ? "100vw"
+              : "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          }
+          priority={currentIndex === 0 && !isFull}
+          className={`z-10 transition-all duration-500 ${isFull ? "object-contain" : `group-hover/carousel:scale-105 ${objectFit} ${imagePosition}`}`}
+        />
+      </>
     );
   };
+
   return (
     <>
-      {/* 1. INLINE CAROUSEL (Clickable) */}
+      {/* 1. INLINE CAROUSEL */}
       <div
-        className="relative h-56 w-full bg-slate-200 dark:bg-slate-900 overflow-hidden group/carousel cursor-pointer"
+        className={`${containerClassName} bg-slate-900 overflow-hidden group/carousel cursor-pointer flex items-center justify-center`}
         onClick={openFullscreen}
       >
         {renderContent(media[currentIndex], false)}

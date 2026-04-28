@@ -1,5 +1,5 @@
 import { getDictionary } from "@/dictionaries/dictionary";
-import MediaCarousel from "@/components/MediaCarousel"; // 🚨 Updated import
+import MediaCarousel from "@/components/MediaCarousel";
 
 export default async function HobbiesPage(props: {
   params: Promise<{ lang: string }>;
@@ -10,7 +10,7 @@ export default async function HobbiesPage(props: {
 
   return (
     <main className="max-w-5xl mx-auto py-16 px-6 min-h-screen">
-      {/* HEADER SECTION (Remains the same) ... */}
+      {/* HEADER SECTION */}
       <div className="text-center md:text-left mb-16 border-b border-slate-200/50 dark:border-[#233554] pb-8">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-slate-900 dark:text-white tracking-tight">
           {dict.hobbies.title}
@@ -20,6 +20,7 @@ export default async function HobbiesPage(props: {
         </p>
       </div>
 
+      {/* SECTION 1: COMMUNITY & ACHIEVEMENTS */}
       <section className="mb-20">
         <h2 className="text-2xl font-bold mb-8 text-slate-900 dark:text-white flex items-center gap-3">
           <span className="text-blue-600 dark:text-blue-400">🌍</span>{" "}
@@ -27,11 +28,13 @@ export default async function HobbiesPage(props: {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* North Africa Dreamin (Mixed Media Example) */}
+          {/* North Africa Dreamin */}
           <div className="flex flex-col rounded-3xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] shadow-sm hover:shadow-md transition-all group overflow-hidden">
             <MediaCarousel
-              media={["/nad-1.jpg", "/nad-2.jpg"]} // 🚨 You can now mix images and videos!
+              media={["/nad-1.jpg", "/nad-2.jpg"]}
               alt="Hackathon Winner"
+              objectFit="object-contain"
+              enableBlurBg={true}
             />
             <div className="p-8 flex-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2 block">
@@ -46,7 +49,7 @@ export default async function HobbiesPage(props: {
             </div>
           </div>
 
-          {/* GITEX */}
+          {/* GITEX Africa */}
           <div className="flex flex-col rounded-3xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] shadow-sm hover:shadow-md transition-all group overflow-hidden">
             <MediaCarousel
               media={[
@@ -56,6 +59,8 @@ export default async function HobbiesPage(props: {
               ]}
               alt="GITEX Africa"
               imagePosition="object-top"
+              objectFit="object-contain"
+              enableBlurBg={true}
             />
             <div className="p-8 flex-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2 block">
@@ -70,11 +75,13 @@ export default async function HobbiesPage(props: {
             </div>
           </div>
 
-          {/* Salesforce Community */}
+          {/* Salesforce Developer Community */}
           <div className="flex flex-col rounded-3xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] shadow-sm hover:shadow-md transition-all group overflow-hidden">
             <MediaCarousel
               media={["/sf-community-1.jpg", "/sf-community-2.jpg"]}
               alt="Salesforce Community"
+              objectFit="object-contain"
+              enableBlurBg={true}
             />
             <div className="p-8 flex-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2 block">
@@ -89,9 +96,14 @@ export default async function HobbiesPage(props: {
             </div>
           </div>
 
-          {/* ENACTUS */}
+          {/* ENACTUS EMSI */}
           <div className="flex flex-col rounded-3xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] shadow-sm hover:shadow-md transition-all group overflow-hidden">
-            <MediaCarousel media={["/enactus-2.jpg"]} alt="ENACTUS Team" />
+            <MediaCarousel
+              media={["/enactus-2.jpg"]}
+              alt="ENACTUS Team"
+              objectFit="object-contain"
+              enableBlurBg={true}
+            />
             <div className="p-8 flex-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2 block">
                 Leadership
@@ -104,12 +116,15 @@ export default async function HobbiesPage(props: {
               </p>
             </div>
           </div>
+
           {/* AMPC Competition */}
           <div className="flex flex-col rounded-3xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] shadow-sm hover:shadow-md transition-all group overflow-hidden">
             <MediaCarousel
               media={["/ampc-1.jpg", "/ampc-2.jpg", "/ampc-3.jpg"]}
               alt="AMPC Competition Meknes"
               imagePosition="object-top"
+              objectFit="object-contain"
+              enableBlurBg={true}
             />
             <div className="p-8 flex-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2 block">
@@ -126,7 +141,7 @@ export default async function HobbiesPage(props: {
         </div>
       </section>
 
-      {/* SECTION 2: PERSONAL INTERESTS (SPORTS & GAMING) */}
+      {/* SECTION 2: PERSONAL INTERESTS */}
       <section>
         <h2 className="text-2xl font-bold mb-8 text-slate-900 dark:text-white flex items-center gap-3">
           <span className="text-blue-600 dark:text-blue-400">⚡</span>{" "}
