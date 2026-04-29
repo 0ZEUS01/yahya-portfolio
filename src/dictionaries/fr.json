@@ -2,6 +2,7 @@
   "navbar": {
     "home": "Accueil",
     "about": "À propos",
+    "education": "Formation",
     "projects": "Projets",
     "hobbies": "Loisirs",
     "contact": "Contact"
@@ -54,5 +55,16 @@
     "sportsDesc": "Passionné par le sport, je pratique et suis régulièrement le football, le basketball et le handball.",
     "practicalTitle": "Pratique & Esprit",
     "practicalDesc": "Loin du clavier, je passe du temps à explorer la réparation électronique et à me plonger dans de bons livres."
-  }
+  },
+  "education": {
+  "title": "Formation & Certifications",
+  "subtitle": "Mon parcours académique et mes titres professionnels.",
+  "emsiDegree": "Ingénieur d'État en Informatique et Réseaux",
+  "emsiOption": "Option MIAGE",
+  "istaDegree": "Technicien Spécialisé en Développement Informatique",
+  "bacDegree": "Baccalauréat en Sciences Physiques",
+  "bacOption": "Option Française",
+  "certTitle": "Certifications Professionnelles",
+  "viewCert": "Vérifier le Certificat"
+}
 }

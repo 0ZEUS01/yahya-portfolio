@@ -2,6 +2,7 @@
   "navbar": {
     "home": "Home",
     "about": "About",
+    "education": "Education",
     "projects": "Projects",
     "hobbies": "Hobbies",
     "contact": "Contact"
@@ -54,5 +55,16 @@
     "sportsDesc": "Passionate about staying active by playing and following football, basketball, and handball.",
     "practicalTitle": "Practical & Mind",
     "practicalDesc": "When away from the keyboard, I spend time exploring electronics repair and diving into good books."
-  }
+  },
+  "education": {
+  "title": "Education & Certifications",
+  "subtitle": "My academic journey and professional credentials.",
+  "emsiDegree": "State Engineer in Computer Science",
+  "emsiOption": "MIAGE Option",
+  "istaDegree": "Specialized Technician in Software Development",
+  "bacDegree": "Baccalaureate in Physical Sciences",
+  "bacOption": "French Option",
+  "certTitle": "Professional Certifications",
+  "viewCert": "Verify Certificate"
+}
 }

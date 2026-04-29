@@ -13,6 +13,15 @@ export interface ProjectMetadata {
   featured?: boolean; 
 }
 
+export interface NavbarDict {
+  home: string;
+  about: string;
+  education: string;
+  projects: string;
+  hobbies: string;
+  contact: string;
+}
+
 export interface Project {
   slug: string;
   metadata: ProjectMetadata;
