@@ -1,41 +1,51 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { getDictionary } from '@/dictionaries/dictionary';
+import Link from "next/link";
+import Image from "next/image";
+import { getDictionary } from "@/dictionaries/dictionary";
 
-export default async function Home(props: { params: Promise<{ lang: string }> }) {
+export default async function Home(props: {
+  params: Promise<{ lang: string }>;
+}) {
   const params = await props.params;
-  const lang = params.lang as 'en' | 'fr';
+  const lang = params.lang as "en" | "fr";
   const dict = await getDictionary(lang);
 
   return (
     <main className="max-w-5xl mx-auto py-12 md:py-24 px-6 min-h-screen flex flex-col justify-center">
-      
       {/* HERO SECTION */}
-      <div className="flex flex-col md:flex-row items-center justify-between gap-12 mb-20">
-        
-        {/* Left: Text & Call to Actions */}
+      <div className="flex flex-col md:flex-row items-center justify-between gap-12 mb-24">
+        {/* Left: Professional Identity & Vision */}
         <div className="flex-1 text-center md:text-left">
-          <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold text-sm border border-blue-200 dark:border-blue-800">
-            👋 {dict.landing.badge}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-bold text-sm border border-blue-200 dark:border-blue-800 animate-fade-in">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            </span>
+            {dict.landing.badge}
           </div>
-          
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-slate-900 dark:text-white leading-tight">
+
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-slate-900 dark:text-white leading-[1.1]">
             {dict.landing.heroTitle}
           </h1>
-          
-          <p className="text-xl md:text-2xl text-slate-600 dark:text-[#8892B0] mb-8 leading-relaxed max-w-2xl">
+
+          <p className="text-xl md:text-2xl text-slate-600 dark:text-[#8892B0] mb-10 leading-relaxed max-w-2xl italic font-medium">
+            {lang === "en"
+              ? '"Engineering is not just about solving problems; it\'s about creating possibilities."'
+              : "\"L'ingénierie ne consiste pas seulement à résoudre des problèmes ; il s'agit de créer des possibilités.\""}
+          </p>
+
+          <p className="text-lg text-slate-500 dark:text-[#8892B0]/80 mb-10 max-w-xl">
             {dict.landing.heroSub}
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <Link 
-              href={`/${lang}/projects`} 
+            <Link
+              href={`/${lang}/projects`}
               className="px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold transition-all text-center shadow-lg hover:shadow-blue-600/25 hover:-translate-y-1"
             >
               {dict.landing.btnProjects}
             </Link>
-            <Link 
-              href={`/${lang}/about`} 
+            <Link
+              href={`/${lang}/about`}
               className="px-8 py-4 rounded-xl bg-slate-200 dark:bg-[#112240] hover:bg-slate-300 dark:hover:bg-[#233554] text-slate-900 dark:text-white font-bold transition-all text-center border border-slate-300 dark:border-[#233554]"
             >
               {dict.landing.btnAbout}
@@ -43,41 +53,77 @@ export default async function Home(props: { params: Promise<{ lang: string }> })
           </div>
         </div>
 
-        {/* Right: The "Funny/Friendly" Image */}
-        <div className="relative w-64 h-64 md:w-80 md:h-80 group perspective-1000">
-          <div className="absolute inset-0 bg-blue-500 rounded-3xl rotate-6 group-hover:rotate-12 transition-transform duration-500 opacity-20 dark:opacity-40"></div>
-          <Image
-            src="/profile.jpg" // You can change this to a funnier picture in your public folder!
-            alt="Yahya Zini"
-            fill
-            sizes="(max-width: 768px) 100vw, 384px"
-            className="rounded-3xl object-cover shadow-2xl -rotate-3 group-hover:rotate-0 transition-all duration-500 border-4 border-white dark:border-[#020C1B]"
-            priority
-          />
+        {/* Right: Interactive Profile Experience */}
+        <div className="relative w-72 h-72 md:w-96 md:h-96 group">
+          {/* Decorative Background Blobs for depth */}
+          <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
+
+          <div className="relative h-full w-full overflow-hidden rounded-3xl border-2 border-slate-200 dark:border-slate-800 shadow-2xl transition-transform duration-500 group-hover:-rotate-2">
+            <Image
+              src="/profile.jpg"
+              alt="Yahya Zini"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0"
+              priority
+            />
+            {/* Thematic Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+              <p className="text-white font-bold text-xl">Yahya Zini</p>
+              <p className="text-blue-400 font-mono text-sm uppercase tracking-widest">
+                {lang === "en" ? "State Software Engineer" : "Ingénieur d'État"}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* QUICK SUMMARY CARDS */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Link href={`/${lang}/projects`} className="p-6 rounded-2xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] hover:-translate-y-2 transition-transform group">
-          <div className="text-3xl mb-4 group-hover:scale-110 transition-transform origin-left">💻</div>
-          <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{dict.landing.card1Title}</h3>
-          <p className="text-slate-600 dark:text-[#8892B0]">{dict.landing.card1Sub}</p>
-        </Link>
-        
-        <Link href={`/${lang}/hobbies`} className="p-6 rounded-2xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] hover:-translate-y-2 transition-transform group">
-          <div className="text-3xl mb-4 group-hover:scale-110 transition-transform origin-left">🎮</div>
-          <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{dict.landing.card2Title}</h3>
-          <p className="text-slate-600 dark:text-[#8892B0]">{dict.landing.card2Sub}</p>
+      {/* STRATEGIC SUMMARY CARDS */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <Link
+          href={`/${lang}/projects`}
+          className="group p-8 rounded-3xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] hover:border-blue-500/50 transition-all hover:shadow-xl dark:hover:shadow-blue-900/10"
+        >
+          <div className="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+            💻
+          </div>
+          <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
+            {dict.landing.card1Title}
+          </h3>
+          <p className="text-slate-600 dark:text-[#8892B0] leading-relaxed">
+            {dict.landing.card1Sub}
+          </p>
         </Link>
 
-        <Link href={`/${lang}/contact`} className="p-6 rounded-2xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] hover:-translate-y-2 transition-transform group">
-          <div className="text-3xl mb-4 group-hover:scale-110 transition-transform origin-left">📍</div>
-          <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{dict.landing.card3Title}</h3>
-          <p className="text-slate-600 dark:text-[#8892B0]">{dict.landing.card3Sub}</p>
+        <Link
+          href={`/${lang}/hobbies`}
+          className="group p-8 rounded-3xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] hover:border-blue-500/50 transition-all hover:shadow-xl dark:hover:shadow-blue-900/10"
+        >
+          <div className="w-12 h-12 rounded-2xl bg-purple-50 dark:bg-purple-900/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+            🎮
+          </div>
+          <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
+            {dict.landing.card2Title}
+          </h3>
+          <p className="text-slate-600 dark:text-[#8892B0] leading-relaxed">
+            {dict.landing.card2Sub}
+          </p>
+        </Link>
+
+        <Link
+          href={`/${lang}/education`}
+          className="group p-8 rounded-3xl bg-white dark:bg-[#112240] border border-slate-200/50 dark:border-[#233554] hover:border-blue-500/50 transition-all hover:shadow-xl dark:hover:shadow-blue-900/10"
+        >
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-900/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+            🎓
+          </div>
+          <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
+            {dict.landing.card3Title}
+          </h3>
+          <p className="text-slate-600 dark:text-[#8892B0] leading-relaxed">
+            {dict.landing.card3Sub}
+          </p>
         </Link>
       </div>
-
     </main>
   );
 }

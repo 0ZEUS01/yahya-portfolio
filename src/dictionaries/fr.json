@@ -8,17 +8,17 @@
     "contact": "Contact"
   },
   "landing": {
-    "badge": "Ingénieur d'État en Logiciel",
-    "heroTitle": "Création de systèmes robustes & de communautés numériques.",
-    "heroSub": "Je suis Yahya Zini. Le jour, je conçois des solutions Salesforce et Full-Stack. La nuit, je suis 'Big Man', créateur de contenu gaming et explorateur du monde numérique.",
+    "badge": "Architecte Digital & Innovateur",
+    "heroTitle": "Je bâtis des systèmes digitaux qui comptent.",
+    "heroSub": "Ingénieur d'État en logiciel spécialisé dans l'écosystème Salesforce et les applications Full-Stack haute performance. Faire le pont entre le code brut et le succès métier.",
     "btnProjects": "Voir mes projets",
-    "btnAbout": "Lire mon histoire",
-    "card1Title": "Salesforce & Java",
-    "card1Sub": "Développement d'entreprise.",
-    "card2Title": "Créateur de Contenu",
-    "card2Sub": "Streaming sur YouTube & Kick.",
-    "card3Title": "Basé au Maroc",
-    "card3Sub": "Rabat & Errachidia."
+    "btnAbout": "Rencontrer l'ingénieur",
+    "card1Title": "Le Bâtisseur",
+    "card1Sub": "Explorez mes projets d'ingénierie, des flux Salesforce aux plateformes Full-Stack.",
+    "card2Title": "L'Ingénieur Actif",
+    "card2Sub": "Au-delà du code : Hackathons, forums tech et leadership communautaire.",
+    "card3Title": "Le Parcours",
+    "card3Sub": "Consultez mon cursus académique et mes certifications professionnelles."
   },
   "contact": {
     "title": "Restons en Contact",

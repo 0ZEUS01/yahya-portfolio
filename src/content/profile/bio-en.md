@@ -1,20 +1,24 @@
 ---
 name: "Yahya Zini"
 title: "State Software Engineer"
-location: "Errachidia, Morocco"
+location: "Rabat, Morocco"
 profileImage: "/profile.jpg"
 ---
 
-# The Journey of an Engineer
+# The Architect’s Narrative
 
-### 🖥️ Where it Started
-My connection to technology wasn't something I found in a classroom; it started when I was **10 years old** with my first computer. I was that "touchy" kid—the one who couldn't just use a program, I had to know how it worked. I spent my childhood exploring the internet, testing limits, and figuring out the "why" behind every screen. That curiosity is exactly what led me to where I am today.
+### 🖥️ The Spark
+My connection to technology wasn't something I found in a classroom; it started when I was **10 years old**. I was that curious kid who couldn't just use a program I had to know how it worked. I spent my childhood exploring the internet, testing limits, and uncovering the "why" behind every screen.
 
-### 🏗️ Technical Evolution
-I believe in building a strong foundation. I started with a **Specialized Technician degree at ISTA Errachidia**, focusing on the raw mechanics of software development. I then leveled up to a **State Engineer degree (MIAGE) at EMSI Rabat**. This path allowed me to grow from a curious kid into a professional who can handle complex systems like Salesforce, Java/Spring Boot, and modern web architectures.
+### 🏗️ Two Degrees, One Goal
+I believe in building a strong foundation. My journey took me from mastering the fundamentals of software development at **ISTA Errachidia** to the high-level architecture of a **State Engineer degree (MIAGE) at EMSI Rabat**.
 
-### 🎮 The "Big Man" Perspective
-I don't "leave" technology when I'm done working. Under the name **"Big Man"** on YouTube and Kick, I share moments with my friends and the community. For me, gaming isn't just a hobby; it’s about the fun of the challenge and the connection with people. Whether I'm debugging a Salesforce flow or playing a match with friends, the energy is the same.
+This evolution allowed me to grow from a curious hobbyist into a professional who designs scalable solutions. Whether it's refactoring legacy code for performance or winning **3rd Place at the North Africa Dreamin' Hackathon** with an innovative Agentforce solution, I thrive when business logic meets complex engineering.
 
-### ⚽ Interests & Aspirations
-When I'm not behind a screen, I'm usually on the **football** pitch or caught up in a good **book**. I’m a big believer in being helpful—I try to support the people around me whenever I can. While I haven't officially joined a volunteer organization yet, it is a goal of mine to use my skills for community projects in the future. I believe in continuous growth, both as a developer and as a person.
+### 🌍 Beyond the IDE
+I am a firm believer in staying active and engaged. I don't just sit behind a screen; I am a regular participant in tech forums, hackathons, and local developer meetups. My experience as a former member of **ENACTUS EMSI** taught me the value of social entrepreneurship and the impact of cross-functional teamwork.
+
+When I step away from the IDE, I channel my energy into **sports and personal growth**. I am passionate about playing football, basketball, and handball, as well as exploring electronics repair and diving into a good book. Whether on the pitch or in a competitive programming event like the **AMPC**, I bring the same level of discipline and enthusiasm to everything I do.
+
+### 🚀 Aspirations
+I am driven by the desire to be a contributing force in the tech community, supporting my peers and staying at the forefront of innovation. I am always looking for the next challenge that requires not just a coder, but an engineer who is ready to lead, participate, and evolve.

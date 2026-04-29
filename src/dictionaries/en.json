@@ -8,17 +8,17 @@
     "contact": "Contact"
   },
   "landing": {
-    "badge": "State Software Engineer",
-    "heroTitle": "Building robust systems & digital communities.",
-    "heroSub": "I'm Yahya Zini. By day, I architect Salesforce and Full-Stack solutions. By night, I'm 'Big Man', creating gaming content and exploring the digital world.",
-    "btnProjects": "View My Work",
-    "btnAbout": "Read My Story",
-    "card1Title": "Salesforce & Java",
-    "card1Sub": "Enterprise-grade development.",
-    "card2Title": "Content Creator",
-    "card2Sub": "Streaming on YouTube & Kick.",
-    "card3Title": "Based in Morocco",
-    "card3Sub": "Rabat & Errachidia."
+    "badge": "Digital Architect & Innovator",
+    "heroTitle": "I build digital systems that matter.",
+    "heroSub": "State Software Engineer specializing in the Salesforce ecosystem and high-performance Full-Stack applications. Bridging the gap between raw code and business success.",
+    "btnProjects": "See My Work",
+    "btnAbout": "Meet the Engineer",
+    "card1Title": "The Builder",
+    "card1Sub": "Explore my engineering projects, from Salesforce flows to Full-Stack platforms.",
+    "card2Title": "The Active Engineer",
+    "card2Sub": "Beyond code: Hackathons, tech forums, and community leadership.",
+    "card3Title": "The Path",
+    "card3Sub": "Review my academic journey and professional certifications."
   },
   "contact": {
     "title": "Let's Connect",
@@ -57,14 +57,14 @@
     "practicalDesc": "When away from the keyboard, I spend time exploring electronics repair and diving into good books."
   },
   "education": {
-  "title": "Education & Certifications",
-  "subtitle": "My academic journey and professional credentials.",
-  "emsiDegree": "State Engineer in Computer Science",
-  "emsiOption": "MIAGE Option",
-  "istaDegree": "Specialized Technician in Software Development",
-  "bacDegree": "Baccalaureate in Physical Sciences",
-  "bacOption": "French Option",
-  "certTitle": "Professional Certifications",
-  "viewCert": "Verify Certificate"
-}
+    "title": "Education & Certifications",
+    "subtitle": "My academic journey and professional credentials.",
+    "emsiDegree": "State Engineer in Computer Science",
+    "emsiOption": "MIAGE Option",
+    "istaDegree": "Specialized Technician in Software Development",
+    "bacDegree": "Baccalaureate in Physical Sciences",
+    "bacOption": "French Option",
+    "certTitle": "Professional Certifications",
+    "viewCert": "Verify Certificate"
+  }
 }
