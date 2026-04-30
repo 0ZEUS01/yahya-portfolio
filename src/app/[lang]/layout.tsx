@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
+import FeedbackNudge from "@/components/testimonials/FeedbackNudge";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +34,9 @@ export default async function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col transition-colors duration-300`}>
         <Navbar lang={lang} />
         <div className="flex-1">{children}</div>
+        <FeedbackNudge />
       </body>
     </html>
   );
 }
+

@@ -23,6 +23,7 @@ export default async function Navbar({ lang }: { lang: 'en' | 'fr' }) {
             <Link href={`/${lang}/projects`} className="hover:text-slate-950 dark:hover:text-white transition-colors">{dict.navbar.projects}</Link>
             <Link href={`/${lang}/hobbies`} className="hover:text-slate-950 dark:hover:text-white transition-colors">{dict.navbar.hobbies}</Link>
             <Link href={`/${lang}/contact`} className="hover:text-slate-950 dark:hover:text-white transition-colors">{dict.navbar.contact}</Link>
+            <Link href={`/${lang}/guestbook`} className="hover:text-slate-950 dark:hover:text-white transition-colors">{dict.navbar.navGuestbook}</Link>
           </div>
           
           {/* 3. Add the Switcher here */}

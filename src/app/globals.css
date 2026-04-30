@@ -29,3 +29,18 @@
     @apply bg-slate-400/40;
   }
 }
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-in {
+  animation: slideIn 0.5s ease-out forwards;
+}

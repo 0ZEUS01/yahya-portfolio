@@ -1,6 +1,7 @@
 import { getBioData } from '@/lib/markdown';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Image from 'next/image';
+import FeaturedTestimonials from '@/components/testimonials/FeaturedTestimonials';
 
 // Accept the params from Next.js (Promise in Next 16+)
 export default async function AboutPage(props: { params: Promise<{ lang: string }> }) {
@@ -42,6 +43,8 @@ export default async function AboutPage(props: { params: Promise<{ lang: string 
         prose-headings:font-bold prose-headings:tracking-tight prose-a:text-blue-600 dark:prose-a:text-blue-400">
         <MDXRemote source={content} />
       </article>
+
+      <FeaturedTestimonials />
     </main>
   );
 }
