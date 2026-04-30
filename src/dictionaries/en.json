@@ -58,14 +58,65 @@
     "practicalDesc": "When away from the keyboard, I spend time exploring electronics repair and diving into good books."
   },
   "education": {
-    "title": "Education & Certifications",
-    "subtitle": "My academic journey and professional credentials.",
-    "emsiDegree": "State Engineer in Computer Science",
-    "emsiOption": "MIAGE Option",
-    "istaDegree": "Specialized Technician in Software Development",
-    "bacDegree": "Baccalaureate in Physical Sciences",
-    "bacOption": "French Option",
-    "certTitle": "Professional Certifications",
-    "viewCert": "Verify Certificate"
+    "title": "Education & Path",
+    "subtitle": "My academic journey and professional training.",
+    "certTitle": "Certifications",
+    "history": [
+      {
+        "year": "Sept 2025 — Jan 2026",
+        "degree": "JobInTech Training",
+        "institution": "JobInTech",
+        "details": "Intensive Full-Stack & Soft Skills specialization."
+      },
+      {
+        "year": "2022 — 2025",
+        "degree": "State Engineer in Computer Science",
+        "institution": "EMSI Rabat",
+        "details": "MIAGE Option - High-level software architecture."
+      },
+      {
+        "year": "2019 — 2022",
+        "degree": "Specialized Technician in Software Development",
+        "institution": "ISTA Errachidia",
+        "details": "Digital Development fundamentals."
+      },
+      {
+        "year": "2019",
+        "degree": "Baccalaureate",
+        "institution": "Lycée Iqraa 2 - Errachidia",
+        "details": "Physical Sciences."
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Salesforce Certified Platform Developer I",
+        "issuer": "Salesforce",
+        "date": "Feb 2026",
+        "image": "https://res.cloudinary.com/dpwzye1tt/image/upload/v1777548867/certDev_vhbvt8.png"
+      },
+      {
+        "name": "Salesforce Certified Agentforce Specialist",
+        "issuer": "Salesforce",
+        "date": "Dec 2025",
+        "image": "https://res.cloudinary.com/dpwzye1tt/image/upload/v1777548867/certAgentForce_lv3w9x.png"
+      },
+      {
+        "name": "Python for Everybody",
+        "issuer": "University of Michigan",
+        "date": "Aug 2024",
+        "image": "https://res.cloudinary.com/dpwzye1tt/image/upload/v1777548791/certPython_zt3ile.png"
+      },
+      {
+        "name": "Sales and CRM Overview",
+        "issuer": "Salesforce",
+        "date": "Aug 2025", 
+        "image": "https://res.cloudinary.com/dpwzye1tt/image/upload/v1777548791/certCRM_mcyj8y.png"
+      },
+      {
+        "name": "Java and Object-Oriented Programming (Completed)",
+        "issuer": "University of Pennsylvania",
+        "date": "Nov 2023"
+      }
+    ]
   }
 }
