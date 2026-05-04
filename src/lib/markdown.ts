@@ -21,6 +21,7 @@ export interface NavbarDict {
   projects: string;
   hobbies: string;
   contact: string;
+  navGuestbook: string;
 }
 
 export interface Project {

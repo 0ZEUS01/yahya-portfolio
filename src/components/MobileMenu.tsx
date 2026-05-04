@@ -15,6 +15,7 @@ export default function MobileMenu({ lang, dict }: { lang: string; dict: NavbarD
     { name: dict.projects, path: "/projects" },
     { name: dict.hobbies, path: "/hobbies" },
     { name: dict.contact, path: "/contact" },
+    { name: dict.navGuestbook, path: "/guestbook" },
   ];
 
   return (
