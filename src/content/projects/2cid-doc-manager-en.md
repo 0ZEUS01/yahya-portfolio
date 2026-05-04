@@ -4,6 +4,7 @@ shortDescription: "A professional corporate solution for secure file sharing wit
 tech: "Angular, Spring Boot, PostgreSQL, Java, JavaScript"
 type: "Full-Stack Engineering"
 logo: "/cid-logo.jpg"
+media: "https://res.cloudinary.com/dpwzye1tt/image/upload/v1777905682/98075358-8b09-4663-acc1-769447d5f226.png , https://res.cloudinary.com/dpwzye1tt/image/upload/v1777905677/5f543a04-44fb-429c-8815-faf561b95de3.png , https://res.cloudinary.com/dpwzye1tt/image/upload/v1777905702/705e41a9-f144-431b-a192-e894b691d12e.png , https://res.cloudinary.com/dpwzye1tt/image/upload/v1777905667/d450c6d5-6d02-4774-a2e4-97129e750eb2.png"
 demo: "https://drive.google.com/file/d/1yzN5dLYe0MboV4cR4ZdyXIG-m7p9nfoL/view?usp=sharing"
 github: "https://github.com/0ZEUS01/FolderManagerBack"
 featured: true

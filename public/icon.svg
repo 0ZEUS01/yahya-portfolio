@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Dark navy background (Delete this line if you want a transparent background!) -->
+  <rect width="512" height="512" rx="112" fill="#0b1121" />
+  
+  <!-- YZ. Text -->
+  <text 
+    x="48%" 
+    y="55%" 
+    font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+    font-size="240" 
+    font-weight="900" 
+    text-anchor="middle" 
+    dominant-baseline="central"
+    letter-spacing="-8">
+    <tspan fill="#ffffff">YZ</tspan><tspan fill="#2563eb">.</tspan>
+  </text>
+</svg>

@@ -4,6 +4,7 @@ shortDescription: "A comprehensive Salesforce insurance management system coveri
 tech: "Apex, LWC, Flow, SOQL, Agentforce"
 type: "Salesforce Ecosystem"
 logo: "/arkx-logo.jpg"
+media: "https://res.cloudinary.com/dpwzye1tt/image/upload/v1777905394/c399b638-b3f6-40cc-b28c-306e969e3fb7.png , https://res.cloudinary.com/dpwzye1tt/image/upload/v1777905386/f95a3086-ac9f-4d3b-800c-817769b5fa7e.png , https://res.cloudinary.com/dpwzye1tt/image/upload/v1777905248/Gemini_Generated_Image_4ye23f4ye23f4ye2_ueagcy.png"
 demo: "https://drive.google.com/file/d/1CwvMlW0ShfUNdm8r8R1IY1IzZUV8xN0C/view?usp=sharing"
 featured: true
 ---

@@ -31,7 +31,24 @@ export default async function RootLayout({
 
   return (
     <html lang={lang}>
-      <body className={`${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col transition-colors duration-300`}>
+      <head>
+        <link
+          rel="icon"
+          href="https://res.cloudinary.com/dpwzye1tt/image/upload/v1777908432/gemini-svg_2_t39bor.svg"
+          media="(prefers-color-scheme: light)"
+          type="image/svg+xml"
+        />
+
+        <link
+          rel="icon"
+          href="https://res.cloudinary.com/dpwzye1tt/image/upload/v1777908435/gemini-svg_3_v75kgk.svg"
+          media="(prefers-color-scheme: dark)"
+          type="image/svg+xml"
+        />
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col transition-colors duration-300`}
+      >
         <Navbar lang={lang} />
         <div className="flex-1">{children}</div>
         <FeedbackNudge />
@@ -39,4 +56,3 @@ export default async function RootLayout({
     </html>
   );
 }
-
