@@ -4,6 +4,7 @@ shortDescription: "Une plateforme full-stack ayant modernisé le suivi industrie
 tech: "React, Spring Boot, PostgreSQL"
 type: "Web Full-Stack"
 logo: "/cid-logo.jpg"
+media: "https://res.cloudinary.com/dpwzye1tt/image/upload/v1777910899/df6f129c-733b-4170-8086-ae764f8429c7.png, https://res.cloudinary.com/dpwzye1tt/image/upload/v1777910912/a739775d-34e4-412b-8b18-0dd8775ca35d.png, https://res.cloudinary.com/dpwzye1tt/image/upload/v1777910824/0cded489-a1bc-4b97-b7b4-c6fd594da1b3.png, https://res.cloudinary.com/dpwzye1tt/image/upload/v1777910803/6ffe1401-e7f5-482f-91f3-1c98b940a758.png"
 github: "https://github.com/0ZEUS01/App_CID"
 featured: true
 ---

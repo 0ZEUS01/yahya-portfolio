@@ -3,6 +3,7 @@ title: "Fleet Management System"
 shortDescription: "A native vehicle-to-cloud ecosystem for real-time tracking and centralized logistics management."
 tech: "Android Studio, Java, Angular, Spring Boot, SQL Server"
 type: "Web & Mobile"
+media: "https://res.cloudinary.com/dpwzye1tt/image/upload/v1777910374/b8040d63-91dd-4060-b397-51028dd5ea1f.png , https://res.cloudinary.com/dpwzye1tt/image/upload/v1777910394/6d3b56a0-253c-4996-b9e0-a71d302be97e.png , https://res.cloudinary.com/dpwzye1tt/image/upload/v1777910410/73c4d223-ad20-45cc-b7c9-4cce05ca8518.png , https://res.cloudinary.com/dpwzye1tt/image/upload/v1777910442/41e24ef2-75d7-4535-b538-5d623d035d66.png , https://res.cloudinary.com/dpwzye1tt/image/upload/v1777910318/a8433564-ae7a-4d8d-8378-bb0dca1ed3a2.png"
 github: "https://github.com/0ZEUS01/Car_Fleet_Management"
 featured: true
 ---
