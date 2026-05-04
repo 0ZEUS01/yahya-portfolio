@@ -11,6 +11,7 @@ export interface ProjectMetadata {
   github?: string;
   demo?: string;
   featured?: boolean; 
+  shortDescription?: string;
 }
 
 export interface NavbarDict {
